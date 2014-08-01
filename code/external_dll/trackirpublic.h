@@ -6,17 +6,6 @@
 
 #define TRACKIRBRIDGEDLLNAME "scptrackir.dll"
 
-#define SCP_INITRESULT_SUCCESS 0
-#define SCP_INITRESULT_BADKEY 1
-#define SCP_INITRESULT_BADPATH 2
-#define SCP_INITRESULT_PATHTOOLONG 3
-#define SCP_INITRESULT_NODLL 4
-#define SCP_INITRESULT_BADSIGNATURE 5
-#define SCP_INITRESULT_UNABLETOREGISTER 6
-#define SCP_INITRESULT_BADDATAFIELDS 7
-#define SCP_INITRESULT_BADREGISTRATION 8
-#define SCP_INITRESULT_BADTRANSMISSION 9
-
 /* Exported functions */
 /* HWND comes from externalcode.h */
 /* These are function pointer prototypes provided for library loading */

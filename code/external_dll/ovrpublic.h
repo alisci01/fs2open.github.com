@@ -7,22 +7,8 @@
 */
 
 #include <OVR.h>
+#include "externalcode.h"
 #include "globalincs/pstypes.h"
-
-#define SCP_INITRESULT_SUCCESS 0
-#define SCP_INITRESULT_BADKEY 1
-#define SCP_INITRESULT_BADPATH 2
-#define SCP_INITRESULT_PATHTOOLONG 3
-#define SCP_INITRESULT_NODLL 4
-#define SCP_INITRESULT_BADSIGNATURE 5
-#define SCP_INITRESULT_UNABLETOREGISTER 6
-#define SCP_INITRESULT_BADDATAFIELDS 7
-#define SCP_INITRESULT_BADREGISTRATION 8
-#define SCP_INITRESULT_BADTRANSMISSION 9
-#define SCP_INITRESULT_INITFAILED 10
-#define SCP_INITRESULT_NOHMDDETECTED 11
-#define SCP_INITRESULT_TRACKCONFIGFAILED 12
-#define SCP_INITRESULT_RENDERCONFIGFAILED 13
 
 class OculusVR
 {
@@ -62,6 +48,11 @@ public:
 
 		return 0;
 	}
+
+    bool Enabled( )
+    {
+        return m_enabled;
+    }
 
 	void PollTracking( )
 	{
