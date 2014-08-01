@@ -1,10 +1,8 @@
 #ifndef OVRPUBLIC_H_INCLUDED_
 #define OVRPUBLIC_H_INCLUDED_
 
-#include "external_dll/externalcode.h"
+#include "OVR.h"
 #include "globalincs/pstypes.h"
-
-#define OVREDLLNAME "scptrackir.dll"
 
 #define SCP_INITRESULT_SUCCESS 0
 #define SCP_INITRESULT_BADKEY 1
@@ -17,20 +15,20 @@
 #define SCP_INITRESULT_BADREGISTRATION 8
 #define SCP_INITRESULT_BADTRANSMISSION 9
 
-class OculusVRDLL : public SCP_ExternalCode
+class OculusVR
 {
 public:
-	OculusVRDLL()
+	OculusVR()
 	{
 
 	}
 
 private:
-	/* Functions */
+	
 }
 
 #ifndef SCPDLL_EXTERNAL_LIB
-extern OculusVRDLL gOvrDll_OculusVR;
+extern OculusVR gOculusVR;
 #endif
 
 #endif /* OVRPUBLIC_H_INCLUDED_ */
